@@ -16,7 +16,7 @@ public class LabeledPointTest {
   }
 
   @Test
-  void testLabeledPointEquals() {
+  public void testLabeledPointEquals() {
     LabeledPoint point = new LabeledPoint(1, 2, "test");
     LabeledPoint refToPoint = point;
     assertTrue(point.equals(refToPoint));
@@ -29,7 +29,7 @@ public class LabeledPointTest {
   }
 
   @Test
-  void testLabeledPointHashCode() {
+  public void testLabeledPointHashCode() {
     LabeledPoint point = new LabeledPoint(1, 2, "test");
     LabeledPoint refToLabeledPoint = point;
     assertTrue(point.hashCode() == refToLabeledPoint.hashCode());

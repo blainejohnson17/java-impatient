@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
-class PointTest {
+public class PointTest {
   @Test
-  void testPointToString() {
+  public void testPointToString() {
     Point point = new Point(1, 2);
     String expected = point.getClass().getName() + "@" + Integer.toHexString(point.hashCode())
         + ":x=" + point.getX() + "," + "y=" + point.getY();
@@ -15,7 +15,7 @@ class PointTest {
   }
 
   @Test
-  void testPointEquals() {
+  public void testPointEquals() {
     Point point = new Point(1, 2);
     Point refToPoint = point;
     assertTrue(point.equals(refToPoint));
@@ -27,7 +27,7 @@ class PointTest {
   }
 
   @Test
-  void testPointHashCode() {
+  public void testPointHashCode() {
     Point point = new Point(1, 2);
     Point refToPoint = point;
     assertTrue(point.hashCode() == refToPoint.hashCode());
