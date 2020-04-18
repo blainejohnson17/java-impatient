@@ -1,8 +1,8 @@
-package ch05.ex03;
+package ch05.ex04;
 
 import java.util.ArrayList;
-import ch05.ex03.FileReader.Result;
-import ch05.ex03.FileReader.ResultStatus;
+import ch05.ex04.FileReader.Result;
+import ch05.ex04.FileReader.ResultStatus;
 
 public class MathUtil {
 

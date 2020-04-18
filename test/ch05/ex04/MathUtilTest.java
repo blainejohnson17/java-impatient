@@ -1,4 +1,4 @@
-package ch05.ex03;
+package ch05.ex04;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.io.BufferedWriter;
@@ -7,8 +7,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import org.junit.jupiter.api.Test;
-import ch05.ex03.FileReader.Result;
-import ch05.ex03.FileReader.ResultStatus;
+import ch05.ex04.MathUtil;
+import ch05.ex04.FileReader.Result;
+import ch05.ex04.FileReader.ResultStatus;
 
 public class MathUtilTest {
 

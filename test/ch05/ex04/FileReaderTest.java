@@ -1,4 +1,4 @@
-package ch05.ex03;
+package ch05.ex04;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.io.BufferedWriter;
@@ -9,8 +9,9 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
-import ch05.ex03.FileReader.Result;
-import ch05.ex03.FileReader.ResultStatus;
+import ch05.ex04.FileReader;
+import ch05.ex04.FileReader.Result;
+import ch05.ex04.FileReader.ResultStatus;
 
 public class FileReaderTest {
 

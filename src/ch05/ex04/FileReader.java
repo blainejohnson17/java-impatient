@@ -1,4 +1,4 @@
-package ch05.ex03;
+package ch05.ex04;
 
 import java.io.File;
 import java.io.FileNotFoundException;
