@@ -64,13 +64,4 @@ public class TextTransformTest {
     assertTrue(err.toString().contains("NoSuchFileException: foo.bar"));
   }
 
-  @Test
-  void testToLowerCaseInvalidOutputPaths() throws IOException {
-    Path out = Paths.get("foo.bar");
-    Path in = Files.createTempFile("in", ".txt");
-
-    TextTransform.toLowerCase(in, out);
-    assertTrue(err.toString().contains("NoSuchFileException: foo.bar"));
-  }
-
 }
