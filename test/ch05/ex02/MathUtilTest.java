@@ -10,7 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import org.junit.jupiter.api.Test;
 
-public class MainTest {
+public class MathUtilTest {
 
   @Test
   public void testSumOfValues() throws IOException {
@@ -20,32 +20,28 @@ public class MainTest {
     bw.newLine();
     bw.write("2.3");
     bw.close();
-    Main main = new Main();
-    double sum = main.sumOfValues(tempFile.toString());
+    double sum = MathUtil.sumOfValues(tempFile.toString());
     assertEquals(3.5, sum);
   }
 
   @Test
   public void testSumOfValuesNullFilename() {
-    Main main = new Main();
     assertThrows(IllegalArgumentException.class, () -> {
-      main.sumOfValues(null);
+      MathUtil.sumOfValues(null);
     });
   }
 
   @Test
   public void testSumOfValuesEmptyFilename() {
-    Main main = new Main();
     assertThrows(IllegalArgumentException.class, () -> {
-      main.sumOfValues("");
+      MathUtil.sumOfValues("");
     });
   }
 
   @Test
   public void testSumOfValuesInvalidFilename() {
-    Main main = new Main();
     assertThrows(FileNotFoundException.class, () -> {
-      main.sumOfValues("foo.bar");
+      MathUtil.sumOfValues("foo.bar");
     });
   }
 
@@ -58,9 +54,8 @@ public class MainTest {
     bw.write("boo");
     bw.close();
 
-    Main main = new Main();
     assertThrows(NumberFormatException.class, () -> {
-      main.sumOfValues(tempFile.toString());
+      MathUtil.sumOfValues(tempFile.toString());
     });
   }
 
