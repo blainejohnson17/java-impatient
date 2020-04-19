@@ -1,4 +1,4 @@
-package ch05.ex07;
+package ch05.ex08;
 
 import java.util.concurrent.locks.ReentrantLock;
 

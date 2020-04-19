@@ -1,10 +1,11 @@
-package ch05.ex07;
+package ch05.ex08;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.verify;
 import java.util.concurrent.locks.ReentrantLock;
 import org.junit.jupiter.api.Test;
+import ch05.ex08.LockUtil;
 
 
 
