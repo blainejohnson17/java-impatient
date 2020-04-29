@@ -3,7 +3,6 @@ package ch06.ex06;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
-import ch06.ex06.ArrayUtils;
 
 public class ArrayUtilsTest {
 
