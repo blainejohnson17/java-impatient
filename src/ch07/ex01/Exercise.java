@@ -9,6 +9,10 @@ import java.util.Set;
 public class Exercise {
 
   public static List<Integer> seiveWithHashSet(int n) {
+    if (n < 2) {
+      throw new IllegalArgumentException("n must be 2 or greater");
+    }
+
     Set<Integer> set = new HashSet<>(n);
     for (int i = 2; i <= n; i++) {
       set.add(i);
@@ -26,6 +30,10 @@ public class Exercise {
   }
 
   public static List<Integer> seiveWithBitSet(int n) {
+    if (n < 2) {
+      throw new IllegalArgumentException("n must be 2 or greater");
+    }
+
     BitSet set = new BitSet(n);
     set.set(2, n + 1);
 

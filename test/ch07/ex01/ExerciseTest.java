@@ -1,6 +1,7 @@
 package ch07.ex01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -15,12 +16,21 @@ public class ExerciseTest {
   void testSeiveWithHashSet() {
     assertEquals(primes50, Exercise.seiveWithHashSet(50));
     assertEquals(primes100, Exercise.seiveWithHashSet(100));
+
+    assertThrows(IllegalArgumentException.class, () -> {
+      Exercise.seiveWithHashSet(1);
+    });
   }
+
 
   @Test
   void testSeiveWithBitSet() {
     assertEquals(primes50, Exercise.seiveWithBitSet(50));
     assertEquals(primes100, Exercise.seiveWithBitSet(100));
+
+    assertThrows(IllegalArgumentException.class, () -> {
+      Exercise.seiveWithBitSet(1);
+    });
   }
 
 }
