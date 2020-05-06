@@ -8,6 +8,7 @@ public class ExerciseTest {
 
   @Test
   void testDoWork() {
+    @SuppressWarnings("serial")
     class ThrowMe extends Exception {
     }
 
@@ -20,5 +21,4 @@ public class ExerciseTest {
     assertEquals("real exception", ex.getCause().getMessage());
 
   }
-
 }
